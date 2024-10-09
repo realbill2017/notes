@@ -34,13 +34,18 @@ VITE_MSAL_AUTHORITY=https://login.microsoftonline.com/09edc9fc-2632-4ede-b0ec-2b
 # https://truck-load-api.dev.porterpipe.com/
 # https://truck-load-api.prod.porterpipe.com/
 
-EXPO_PUBLIC_API_URL=https://truck-validation-api.dev.porterpipe.com/api/v1/
+EXPO_PUBLIC_API_URL=https://truck-load-api.dev.porterpipe.com/api/v1/
 EXPO_PUBLIC_MS_LOGIN_URL=https://login.microsoftonline.com/09edc9fc-2632-4ede-b0ec-2bf1cd479f12/v2.0
 EXPO_PUBLIC_MS_CLIENT_ID=db978a10-c6a6-4526-8886-bb51a0d80979
 
-EXPO_PUBLIC_API_URL=https://truck-validation-api.dev.porterpipe.com/api/v1/
+
+# https://truck-load-api.dev.porterpipe.com/
+# https://truck-load-api.prod.porterpipe.com/
+
+EXPO_PUBLIC_API_URL=https://truck-load-api.dev.porterpipe.com
 EXPO_PUBLIC_MS_LOGIN_URL=https://login.microsoftonline.com/09edc9fc-2632-4ede-b0ec-2bf1cd479f12/v2.0
 EXPO_PUBLIC_MS_CLIENT_ID=db978a10-c6a6-4526-8886-bb51a0d80979
+EXPO_PUBLIC_MS_TENANT_ID=7ae749f3-8014-44af-83d4-acd619ac01c0
 
 
 # https://truck-load-api.dev.porterpipe.com/
@@ -84,6 +89,8 @@ await WebBrowser.openAuthSessionAsync(process.env.EXPO_PUBLIC_MS_LOGOUT_URL);
 
 // ==== MTR ==== //
 
+=== mobile
+
 NODE_ENV=development
 
 EXPO_PUBLIC_API_BASE_URL=https://mtr-web-app-api.dev.porterpipe.com/api/v1
@@ -92,7 +99,17 @@ EXPO_PUBLIC_MS_APP_ID=09edc9fc-2632-4ede-b0ec-2bf1cd479f12
 EXPO_PUBLIC_MS_TENANT_ID=7ae749f3-8014-44af-83d4-acd619ac01c0
 EXPO_PUBLIC_MS_LOGIN_URL=https://login.microsoftonline.com/09edc9fc-2632-4ede-b0ec-2bf1cd479f12/v2.0
 
+=== web
 
+VITE_MSAL_APP_ID=7ae749f3-8014-44af-83d4-acd619ac01c0
+VITE_MSAL_AUTHORITY=https://login.microsoftonline.com/09edc9fc-2632-4ede-b0ec-2bf1cd479f12
+
+VITE_API_BASE_URL=http://localhost:3801/api/v1
+# VITE_API_BASE_URL=https://mtr-web-app-api.dev.porterpipe.com/api/v1
+VITE_AWS_S3_BUCKET_FOLDER=mtrs-dev
+# VITE_AWS_S3_BUCKET_FOLDER=mtrs
+
+VITE_NODE_ENV=development
 
 
 
